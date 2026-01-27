@@ -46,7 +46,7 @@ python -m pip install -r requirements.txt
 ### 3) Run the app
 
 ```zsh
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 Open the URL shown in the terminal (usually `http://localhost:8501`).
@@ -89,7 +89,7 @@ python -c "import cv2; print('cv2 OK', cv2.__version__)"
 ## Run
 
 ```zsh
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 Open the URL shown in the terminal (usually `http://localhost:8501`).
