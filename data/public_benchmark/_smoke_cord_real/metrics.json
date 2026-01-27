@@ -1,0 +1,205 @@
+{
+  "seed": 7,
+  "n": 80,
+  "fraud_rate": 0.1,
+  "severity": 0.6,
+  "feature_columns": [
+    "tamper_score",
+    "has_signature",
+    "has_logo",
+    "has_qr",
+    "vl_has_any",
+    "vl_num_keys",
+    "vl_raw_len",
+    "vl_has_vendor",
+    "vl_has_invoice_no",
+    "vl_has_date",
+    "vl_has_total",
+    "vl_has_tax",
+    "vl_currency_inr",
+    "vl_total_value",
+    "vl_tax_value"
+  ],
+  "threshold_metric": "f1",
+  "chosen_threshold": 0.01,
+  "overall_test": {
+    "threshold": 0.01,
+    "accuracy": 0.125,
+    "precision": 0.06666666666666667,
+    "recall": 1.0,
+    "f1": 0.125,
+    "roc_auc": 0.9333333333333333,
+    "pr_auc": 0.5,
+    "confusion": {
+      "tn": 1,
+      "fp": 14,
+      "fn": 0,
+      "tp": 1
+    },
+    "expected_cost": 14.0,
+    "ece": 0.1287232164759189,
+    "reliability": [
+      {
+        "bin_lo": 0.0,
+        "bin_hi": 0.1,
+        "count": 11.0,
+        "mean_prob": 0.03470110520720482,
+        "frac_pos": 0.0
+      },
+      {
+        "bin_lo": 0.1,
+        "bin_hi": 0.2,
+        "count": 0.0,
+        "mean_prob": NaN,
+        "frac_pos": NaN
+      },
+      {
+        "bin_lo": 0.2,
+        "bin_hi": 0.30000000000000004,
+        "count": 2.0,
+        "mean_prob": 0.281715452671051,
+        "frac_pos": 0.0
+      },
+      {
+        "bin_lo": 0.30000000000000004,
+        "bin_hi": 0.4,
+        "count": 1.0,
+        "mean_prob": 0.3091541528701782,
+        "frac_pos": 0.0
+      },
+      {
+        "bin_lo": 0.4,
+        "bin_hi": 0.5,
+        "count": 0.0,
+        "mean_prob": NaN,
+        "frac_pos": NaN
+      },
+      {
+        "bin_lo": 0.5,
+        "bin_hi": 0.6000000000000001,
+        "count": 0.0,
+        "mean_prob": NaN,
+        "frac_pos": NaN
+      },
+      {
+        "bin_lo": 0.6000000000000001,
+        "bin_hi": 0.7000000000000001,
+        "count": 0.0,
+        "mean_prob": NaN,
+        "frac_pos": NaN
+      },
+      {
+        "bin_lo": 0.7000000000000001,
+        "bin_hi": 0.8,
+        "count": 0.0,
+        "mean_prob": NaN,
+        "frac_pos": NaN
+      },
+      {
+        "bin_lo": 0.8,
+        "bin_hi": 0.9,
+        "count": 0.0,
+        "mean_prob": NaN,
+        "frac_pos": NaN
+      },
+      {
+        "bin_lo": 0.9,
+        "bin_hi": 1.0,
+        "count": 2.0,
+        "mean_prob": 0.9026371240615845,
+        "frac_pos": 0.5
+      }
+    ]
+  },
+  "per_tamper_op_test": {
+    "clean": {
+      "threshold": 0.01,
+      "accuracy": 0.06666666666666667,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": NaN,
+      "pr_auc": NaN,
+      "confusion": {
+        "tn": 1,
+        "fp": 14,
+        "fn": 0,
+        "tp": 0
+      },
+      "expected_cost": 14.0,
+      "ece": 0.1438932590186596,
+      "reliability": [
+        {
+          "bin_lo": 0.0,
+          "bin_hi": 0.1,
+          "count": 11.0,
+          "mean_prob": 0.03470110520720482,
+          "frac_pos": 0.0
+        },
+        {
+          "bin_lo": 0.1,
+          "bin_hi": 0.2,
+          "count": 0.0,
+          "mean_prob": NaN,
+          "frac_pos": NaN
+        },
+        {
+          "bin_lo": 0.2,
+          "bin_hi": 0.30000000000000004,
+          "count": 2.0,
+          "mean_prob": 0.281715452671051,
+          "frac_pos": 0.0
+        },
+        {
+          "bin_lo": 0.30000000000000004,
+          "bin_hi": 0.4,
+          "count": 1.0,
+          "mean_prob": 0.3091541528701782,
+          "frac_pos": 0.0
+        },
+        {
+          "bin_lo": 0.4,
+          "bin_hi": 0.5,
+          "count": 0.0,
+          "mean_prob": NaN,
+          "frac_pos": NaN
+        },
+        {
+          "bin_lo": 0.5,
+          "bin_hi": 0.6000000000000001,
+          "count": 0.0,
+          "mean_prob": NaN,
+          "frac_pos": NaN
+        },
+        {
+          "bin_lo": 0.6000000000000001,
+          "bin_hi": 0.7000000000000001,
+          "count": 0.0,
+          "mean_prob": NaN,
+          "frac_pos": NaN
+        },
+        {
+          "bin_lo": 0.7000000000000001,
+          "bin_hi": 0.8,
+          "count": 0.0,
+          "mean_prob": NaN,
+          "frac_pos": NaN
+        },
+        {
+          "bin_lo": 0.8,
+          "bin_hi": 0.9,
+          "count": 0.0,
+          "mean_prob": NaN,
+          "frac_pos": NaN
+        },
+        {
+          "bin_lo": 0.9,
+          "bin_hi": 1.0,
+          "count": 1.0,
+          "mean_prob": 0.9041016697883606,
+          "frac_pos": 0.0
+        }
+      ]
+    }
+  }
+}

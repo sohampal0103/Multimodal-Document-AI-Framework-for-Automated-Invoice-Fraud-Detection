@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Model / training outputs (adjust as needed)
+wandb/
+mlruns/
+
+# Local secrets (if any)
+.env
+.env.*
+
+# Data (these are large; keep only small sample configs)
+data/**/invoices_train/
+data/**/invoices_test/
+data/**/invoices_val/

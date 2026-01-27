@@ -1,0 +1,12 @@
+# YOLOv8 dataset config for invoice layout elements
+# Adjust paths/classes to match your dataset.
+
+path: data/yolo_layout
+train: images/train
+val: images/val
+
+# class names must match your labeling
+names:
+  0: logo
+  1: signature
+  2: qr

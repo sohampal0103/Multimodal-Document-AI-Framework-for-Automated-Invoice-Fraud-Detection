@@ -1,0 +1,11 @@
+{
+  "rows": 500,
+  "seed": 7,
+  "schema": [
+    "tamper_score",
+    "has_signature",
+    "has_logo",
+    "has_qr",
+    "label"
+  ]
+}

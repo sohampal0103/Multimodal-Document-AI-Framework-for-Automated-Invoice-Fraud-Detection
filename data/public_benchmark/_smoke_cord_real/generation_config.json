@@ -1,0 +1,26 @@
+{
+  "dataset": "naver-clova-ix/cord-v2",
+  "dataset_config": null,
+  "n": 80,
+  "fraud_rate": 0.1,
+  "seed": 7,
+  "test_size": 0.2,
+  "val_size": 0.1,
+  "severity": 0.6,
+  "tamper_ops": [
+    "amount_edit",
+    "vendor_swap",
+    "lineitem_add_remove",
+    "signature_transplant",
+    "qr_replace",
+    "copy_move",
+    "occlude",
+    "recompress"
+  ],
+  "multi_step": true,
+  "max_steps": 3,
+  "skip_donut": true,
+  "threshold_metric": "f1",
+  "fp_cost": 1.0,
+  "fn_cost": 10.0
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "file": "cord_000000.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000001.png",
+    "split": "train",
+    "label": 1,
+    "tamper_op": "amount_edit+amount_edit"
+  },
+  {
+    "file": "cord_000002.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000003.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000004.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000005.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000006.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000007.png",
+    "split": "val",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000008.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000009.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000010.png",
+    "split": "train",
+    "label": 1,
+    "tamper_op": "vendor_swap+vendor_swap"
+  },
+  {
+    "file": "cord_000011.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000012.png",
+    "split": "val",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000013.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000014.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000015.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000016.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000017.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000018.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000019.png",
+    "split": "train",
+    "label": 1,
+    "tamper_op": "amount_edit"
+  },
+  {
+    "file": "cord_000020.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000021.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000022.png",
+    "split": "train",
+    "label": 1,
+    "tamper_op": "recompress"
+  },
+  {
+    "file": "cord_000023.png",
+    "split": "train",
+    "label": 1,
+    "tamper_op": "vendor_swap+recompress"
+  },
+  {
+    "file": "cord_000024.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000025.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000026.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000027.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000028.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000029.png",
+    "split": "train",
+    "label": 1,
+    "tamper_op": "copy_move+copy_move"
+  },
+  {
+    "file": "cord_000030.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000031.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000032.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000033.png",
+    "split": "val",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000034.png",
+    "split": "val",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000035.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000036.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000037.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000038.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000039.png",
+    "split": "val",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000040.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000041.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000042.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000043.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000044.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000045.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000046.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000047.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000048.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000049.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000050.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000051.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000052.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000053.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000054.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000055.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000056.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000057.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000058.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000059.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000060.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000061.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000062.png",
+    "split": "test",
+    "label": 1,
+    "tamper_op": "signature_transplant"
+  },
+  {
+    "file": "cord_000063.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000064.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000065.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000066.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000067.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000068.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000069.png",
+    "split": "val",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000070.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000071.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000072.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000073.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000074.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000075.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000076.png",
+    "split": "train",
+    "label": 1,
+    "tamper_op": "recompress"
+  },
+  {
+    "file": "cord_000077.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000078.png",
+    "split": "train",
+    "label": 0,
+    "tamper_op": "clean"
+  },
+  {
+    "file": "cord_000079.png",
+    "split": "test",
+    "label": 0,
+    "tamper_op": "clean"
+  }
+]

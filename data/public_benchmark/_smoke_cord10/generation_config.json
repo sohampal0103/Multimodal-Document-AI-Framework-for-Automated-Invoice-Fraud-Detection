@@ -1,0 +1,16 @@
+{
+  "dataset": "naver-clova-ix/cord-v2",
+  "dataset_config": null,
+  "n": 50,
+  "fraud_rate": 0.1,
+  "seed": 7,
+  "test_size": 0.2,
+  "severity": 0.55,
+  "tamper_ops": [
+    "occlude",
+    "copy_move",
+    "stamp",
+    "recompress"
+  ],
+  "skip_donut": true
+}

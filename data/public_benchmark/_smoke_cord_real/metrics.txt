@@ -1,0 +1,9 @@
+seed=7
+threshold=0.010 (tuned on val via f1)
+test_accuracy=0.1250
+test_f1=0.1250
+test_roc_auc=0.9333
+test_pr_auc=0.5000
+test_ece=0.1287
+test_expected_cost=14.00 (fp_cost=1.0, fn_cost=10.0)
+confusion={'tn': 1, 'fp': 14, 'fn': 0, 'tp': 1}

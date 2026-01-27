@@ -1,0 +1,12 @@
+streamlit
+torch
+transformers
+sentencepiece
+opencv-python
+numpy
+pandas
+scikit-learn
+xgboost
+ultralytics
+pillow
+pdf2image

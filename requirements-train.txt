@@ -1,0 +1,6 @@
+# Training-only dependencies (keep runtime requirements.txt lean)
+# Install with: pip install -r requirements-train.txt
+
+datasets>=2.18.0
+accelerate>=0.27.0
+pyarrow>=14.0.0
