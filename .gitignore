@@ -29,7 +29,5 @@ mlruns/
 .env
 .env.*
 
-# Data (these are large; keep only small sample configs)
-data/**/invoices_train/
-data/**/invoices_test/
-data/**/invoices_val/
+# Data
+# Note: invoice image folders are included in git so teammates can run end-to-end.
