@@ -10,6 +10,47 @@ This repository contains a runnable end-to-end demo pipeline:
 
 > Note: The extraction/detection models are intentionally lightweight so the project runs reliably. For a publication-quality system you’ll want to plug in real trained models and evaluate on a dataset.
 
+## Quick start (teammates)
+
+### 1) Clone the repo
+
+SSH (recommended):
+
+```zsh
+git clone git@github.com:sohampal0103/Multimodal-Document-AI-Framework-for-Automated-Invoice-Fraud-Detection.git
+cd Multimodal-Document-AI-Framework-for-Automated-Invoice-Fraud-Detection
+```
+
+This repo includes the sample benchmark data under `data/public_benchmark/` (including the `invoices_*` image folders), so you can run the full pipeline end-to-end.
+
+### 2) Create a virtual environment + install deps
+
+macOS / Linux:
+
+```zsh
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -U pip
+python -m pip install -r requirements.txt
+```
+
+Windows (PowerShell):
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -U pip
+python -m pip install -r requirements.txt
+```
+
+### 3) Run the app
+
+```zsh
+streamlit run app.py
+```
+
+Open the URL shown in the terminal (usually `http://localhost:8501`).
+
 ## Prerequisites (macOS)
 
 - Python **3.12** (recommended)
