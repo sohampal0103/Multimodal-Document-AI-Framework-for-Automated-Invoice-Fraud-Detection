@@ -51,6 +51,167 @@ python -m streamlit run app.py
 
 Open the URL shown in the terminal (usually `http://localhost:8501`).
 
+## Runbook (complete copy/paste)
+
+Use this section as a single reference for setup + running all modes (app, batch scoring, training, benchmark).
+
+Tip (recommended on macOS): use the included launchers to avoid conda/system-Python conflicts:
+
+```zsh
+./run_app.sh
+DONUT_DISABLE=1 ./run_app.sh
+DONUT_DISABLE=1 XGB_MODEL_PATH="models/xgb_fraud.json" ./run_app.sh
+
+./run_batch.sh
+```
+
+### A) Setup (recommended)
+
+1) From the project root (if your path has spaces, always quote it):
+
+```zsh
+cd "/absolute/path/to/invoice-fraud-detection"
+```
+
+2) Create + activate a clean venv:
+
+```zsh
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -U pip
+```
+
+3) Install runtime deps:
+
+```zsh
+python -m pip install -r requirements.txt
+```
+
+4) Sanity check imports:
+
+```zsh
+python -c "import streamlit, cv2, numpy, pandas; print('imports OK')"
+```
+
+### B) Run the demo app
+
+- Full mode (Donut extraction enabled; first run downloads model weights):
+
+```zsh
+streamlit run app.py
+```
+
+- Offline / fast mode (skip Donut; still runs end-to-end):
+
+```zsh
+DONUT_DISABLE=1 streamlit run app.py
+```
+
+### C) Use the bundled XGBoost model (recommended)
+
+```zsh
+DONUT_DISABLE=1 \
+XGB_MODEL_PATH="models/xgb_fraud.json" \
+streamlit run app.py
+```
+
+### D) Batch score a folder → CSV
+
+Example using the included smoke benchmark invoices:
+
+```zsh
+DONUT_DISABLE=1 \
+XGB_MODEL_PATH="models/xgb_fraud.json" \
+python scripts/batch_score_invoices.py \
+	--invoices data/public_benchmark/_smoke_cord10/invoices_test \
+	--out reports/scores.csv \
+	--threshold 0.5
+```
+
+### E) Train + evaluate (synthetic demo)
+
+```zsh
+python scripts/make_synthetic_dataset.py --out data/synthetic/features.csv --n 2000
+python scripts/train_xgb.py --data data/synthetic/features.csv --out models/xgb_fraud.json
+python scripts/evaluate.py --data data/synthetic/features.csv --model models/xgb_fraud.json
+```
+
+### F) Build a feature CSV from your invoices (real labels)
+
+Inputs required:
+- invoices folder (images or PDFs)
+- labels CSV with columns: `filename,label` (label: 0=genuine, 1=fraud)
+
+CV/layout only (fast/offline):
+
+```zsh
+python scripts/build_feature_dataset.py \
+	--invoices /path/to/invoices \
+	--labels /path/to/labels.csv \
+	--out data/real/features.csv
+```
+
+CV/layout + Donut-derived features:
+
+```zsh
+python scripts/build_feature_dataset_vl.py \
+	--invoices /path/to/invoices \
+	--labels /path/to/labels.csv \
+	--out data/real/features_vl.csv
+```
+
+Offline variant:
+
+```zsh
+python scripts/build_feature_dataset_vl.py \
+	--invoices /path/to/invoices \
+	--labels /path/to/labels.csv \
+	--out data/real/features_vl.csv \
+	--skip-donut
+```
+
+Train + evaluate:
+
+```zsh
+python scripts/train_xgb.py --data data/real/features_vl.csv --out models/xgb_fraud.json
+python scripts/evaluate.py --data data/real/features_vl.csv --model models/xgb_fraud.json
+```
+
+### G) Public benchmark (CORD + synthetic fraud)
+
+Install training-only deps:
+
+```zsh
+python -m pip install -r requirements-train.txt
+```
+
+Run benchmark (fast default: skips Donut):
+
+```zsh
+python scripts/run_public_benchmark_cord.py --n 1000 --fraud-rate 0.10 --out data/public_benchmark/cord10
+```
+
+Include Donut features (slower; downloads model on first run):
+
+```zsh
+python scripts/run_public_benchmark_cord.py --n 1000 --fraud-rate 0.10 --out data/public_benchmark/cord10 --use-donut
+```
+
+### H) Common issues (quick fixes)
+
+- **Imports fail after install**: ensure you are using the project venv.
+	- `source .venv/bin/activate`
+	- `which python` should show `.venv/bin/python`
+
+- **PDF conversion fails**: Poppler missing.
+	- `brew install poppler`
+
+- **Donut fails to load** (offline / slow): disable it.
+	- Run with `DONUT_DISABLE=1`
+
+- **XGBoost import fails**: install OpenMP runtime.
+	- `brew install libomp`
+
 ## Prerequisites (macOS)
 
 - Python **3.12** (recommended)
